@@ -6,10 +6,9 @@ const RowArticle = (props) => {
             <article>
                 <h3>{props.titulo}</h3>
                 <p>{props.fecha}</p>
-                <p>{props.direccion}</p>
+                <a href="developer.mozilla.org">{props.direccion_autor}</a>
             </article>
         </div>
-
     )
 }
 
