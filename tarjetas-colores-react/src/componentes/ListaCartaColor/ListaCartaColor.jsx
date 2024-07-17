@@ -6,7 +6,7 @@ const ListaCartaColor = (props /* TIPO DE DATO PROPS: OBJETO*/) => {
     al mapeo: props.cartaColor.map((tarjeta) => {...}) */
     return (
 
-        <div className='contenedor-tarjeta'>
+        <div>
 
             {cartaColor.map((tarjeta) => {
                 return (

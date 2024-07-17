@@ -8,16 +8,17 @@ const CartaColor = (props /*OBJETO*/) => {
     const fecha = props.fecha /*STRING*/
     const likes = props.likes /*NUMBER*/
     return (
-        <div className='contenedor-padre'>
-            <div className='contenedor-colores'>
-                <ListaColores colores = {colores}/>
+        <section className='seccion-tarjetas'>
+            <div className='contenedor-padre'>
+                <div className='contenedor-colores'>
+                    <ListaColores colores = {colores}/>
+                </div>
+                <div className='contenedor-inferior'>
+                    <button><i className="bi bi-heart"></i> {likes}</button>
+                    <span className='texto'>{fecha}</span>
+                </div>    
             </div>
-            <div className='contenedor-inferior'>
-                <button><i className="bi bi-heart"></i> {likes}</button>
-                <span className='texto'>{fecha}</span>
-            </div>
-            
-        </div>
+        </section>
     )
 }
 

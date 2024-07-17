@@ -11,7 +11,7 @@ const ListaColores = (props) => {
 
             {colores.map((color, index) => {
                 return (
-                        <a key={index} href="#" className='caja-color' style={{ backgroundColor: color }}></a>
+                        <a key={color + index} href="#" className='caja-color' style={{ backgroundColor: color }}></a>
                 )
             })}
 
