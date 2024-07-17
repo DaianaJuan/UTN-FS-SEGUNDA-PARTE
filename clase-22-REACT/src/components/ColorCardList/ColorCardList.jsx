@@ -12,6 +12,7 @@ const ColorCardList = (props) => {
                 return (
                         <ColorCard   
                             likes={tarjeta.likes} 
+                            color={props.color}
                             fecha={tarjeta.fecha}
                             key={tarjeta.id}
                         />
