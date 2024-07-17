@@ -8,7 +8,6 @@ const CartaColor = (props /*OBJETO*/) => {
     const fecha = props.fecha /*STRING*/
     const likes = props.likes /*NUMBER*/
     return (
-        <section className='seccion-tarjetas'>
             <div className='contenedor-padre'>
                 <div className='contenedor-colores'>
                     <ListaColores colores = {colores}/>
@@ -18,7 +17,6 @@ const CartaColor = (props /*OBJETO*/) => {
                     <span className='texto'>{fecha}</span>
                 </div>    
             </div>
-        </section>
     )
 }
 
