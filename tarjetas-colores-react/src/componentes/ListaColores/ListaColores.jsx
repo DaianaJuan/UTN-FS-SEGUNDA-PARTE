@@ -1,21 +1,17 @@
 import React from 'react'
 import './ListaColores.css'
 
+
 const ListaColores = (props) => {
     const colores = props.colores
 
     return (
 
-        <div>
+        <div className='contenedor-colores'>
 
-            {colores.map((color) => {
+            {colores.map((color, index) => {
                 return (
-                    <div className='contenedor-colores'>
-                        <a href="#" className='caja-color' style={{backgroundColor: color}}></a>
-                        <a href="#" className='caja-color' style={{backgroundColor: color}}></a>
-                        <a href="#" className='caja-color' style={{backgroundColor: color}}></a>
-                        <a href="#" className='caja-color' style={{backgroundColor: color}}></a>
-                    </div>
+                        <a key={index} href="#" className='caja-color' style={{ backgroundColor: color }}></a>
                 )
             })}
 
