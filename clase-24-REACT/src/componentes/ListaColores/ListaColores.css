@@ -1,0 +1,20 @@
+
+.contenedor-padre .contenedor-colores{
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    overflow:hidden;
+}
+
+.contenedor-padre .contenedor-colores .caja-color:nth-child(1){
+    height: 40%;
+}
+.contenedor-padre .contenedor-colores .caja-color:nth-child(2){
+    height: 30%;
+}
+.contenedor-padre .contenedor-colores .caja-color:nth-child(3){
+    height: 17%;
+}
+.contenedor-padre .contenedor-colores .caja-color:nth-child(4){
+    height: 13%;
+}
