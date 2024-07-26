@@ -1,5 +1,9 @@
 import React from 'react'
 import './Mensajes.css'
+import { BsCheck2All } from "react-icons/bs";
+
+
+
 
 
 const Mensajes = ({ autor, contenido, fecha, estado }) => {
@@ -22,8 +26,8 @@ const Mensajes = ({ autor, contenido, fecha, estado }) => {
                                 {
                                     estado === 'visto'
 
-                                        ? <span className='estadoVisto'><i class="bi bi-check2-all"></i></span>
-                                        : <span className='estadoNoVisto'><i class="bi bi-check2-all"></i></span>
+                                        ? <span className='estadoVisto'><BsCheck2All /></span>
+                                        : <span className='estadoNoVisto'><BsCheck2All /></span>
                                 }
 
                             </div>
@@ -39,8 +43,8 @@ const Mensajes = ({ autor, contenido, fecha, estado }) => {
                                 {
                                     estado === 'visto'
 
-                                        ? <span className='estadoVisto'><i class="bi bi-check2-all"></i></span>
-                                        : <span className='estadoNoVisto'><i class="bi bi-check2-all"></i></span>
+                                        ? <span className='estadoVisto'><BsCheck2All /></span>
+                                        : <span className='estadoNoVisto'><BsCheck2All /></span>
                                 }
                             </div>
                         </div>

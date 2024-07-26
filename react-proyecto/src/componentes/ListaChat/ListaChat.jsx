@@ -2,8 +2,8 @@ import React from 'react'
 import './ListaChat.css'
 import Mensajes from '../Mensajes/Mensajes'
 
-const ListaChat = (props) => {
-    const { mensajes } = props
+const ListaChat = ({ mensajes }) => {
+    
     return (
         <div className='contenedor-padre'>
             {mensajes.map((mensaje) => {
