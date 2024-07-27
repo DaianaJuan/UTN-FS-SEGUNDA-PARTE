@@ -1,5 +1,4 @@
 .contenedor-footer{
-    position: fixed;
     bottom: 0; 
     z-index: 1000;
     width: 100%; 
@@ -10,6 +9,7 @@
     align-content: center;
     justify-content: space-around;
     margin: 5px;
+    margin-top: 0;
 }
 .contenedor-footer .contenedor-izquierda{
     background-color: #424445;
