@@ -8,23 +8,3 @@
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
 }
-
-html{
-    background-color: black;
-    background-image: url('./componentes/img/fondowsp.jpg');
-    background-repeat: repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-html .contenedor-footer{
-    position: fixed;
-    bottom: 0; 
-    z-index: 1000;
-}
-
-html .contenedor-header{
-    position: fixed;
-    top: 0; 
-    z-index: 1000;
-}
