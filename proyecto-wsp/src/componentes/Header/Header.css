@@ -1,0 +1,58 @@
+.contenedor-header{
+    background-color: #242626;;
+    width: 100%;
+    color: white;
+    font-size: 19px;
+    
+    
+}
+
+.contenedor-header .contenedor-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.contenedor-header .contenedor-nav .contenedor-izquierda{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    
+
+}
+
+.flecha svg{
+    font-size: 2rem;
+}
+
+svg{
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+.contenedor-img{
+    width: 40px; 
+    height: 40px; 
+    background-color: gainsboro;
+    border-radius: 50%;
+    border: none;
+    margin-right: 8px;
+
+}
+
+.contenedor-header .contenedor-nav .contenedor-derecha{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 25px;
+
+}
