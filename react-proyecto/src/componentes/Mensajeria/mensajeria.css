@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: black;
-    background-image: url('./img/fondowsp.jpg');
+    background-image: url('./../../public/imagenes/fondo.jpg');
     background-repeat: repeat;
     background-position: center;
     background-size: cover;

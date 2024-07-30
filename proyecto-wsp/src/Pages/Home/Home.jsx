@@ -1,11 +1,11 @@
 import React from 'react'
 import ListaContactos from '../../componentes/ListaContactos/ListaContactos'
-import { contactos } from '../../data/data-contactos'
+import DATA from '../../data/data-contactos.json'
 
 const Home = () => {
     return (
         <div>
-            <ListaContactos contactos={contactos}/>
+            <ListaContactos contactos={DATA}/>
         </div>
     )
 }

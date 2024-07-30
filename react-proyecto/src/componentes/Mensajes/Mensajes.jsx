@@ -2,10 +2,6 @@ import React from 'react'
 import './Mensajes.css'
 import { BsCheck2All } from "react-icons/bs";
 
-
-
-
-
 const Mensajes = ({ autor, contenido, fecha, estado }) => {
 
     return (

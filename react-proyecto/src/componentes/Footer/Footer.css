@@ -1,5 +1,4 @@
 .contenedor-footer{
-    position: fixed;
     bottom: 0; 
     z-index: 1000;
     width: 100%; 
@@ -10,12 +9,13 @@
     align-content: center;
     justify-content: space-around;
     margin: 5px;
+    margin-top: 0;
 }
 .contenedor-footer .contenedor-izquierda{
-    background-color: #424445;
+    background-color: #242626;;
     border-radius: 50px;
     width: 80%;
-    height: 45px;
+    height: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -37,8 +37,8 @@ input[type="text"] {
 }
 
 .contenedor-footer .btn-enviar{
-    width: 45px; 
-    height: 45px; 
+    width: 50px; 
+    height: 50px; 
     background-color: #25d366;
     border-radius: 50%;
     display: flex;

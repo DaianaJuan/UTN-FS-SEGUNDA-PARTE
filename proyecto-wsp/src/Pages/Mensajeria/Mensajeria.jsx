@@ -1,13 +1,13 @@
 import React, {useState} from 'react'
 import ListaChat from '../../componentes/ListaChat/ListaChat'
-import { contactos } from '../../data/data-contactos'
+import DATA from '../../data/data-contactos.json'
 import Header from '../../componentes/Header/Header'
 import Footer from '../../componentes/Footer/Footer'
 
 
 
 const Mensajeria = () => {
-    const [listaMensajes, setlistaMensajes] = useState(contactos)
+    const [listaMensajes, setlistaMensajes] = useState(DATA)
     const [formMensaje, setFormMensaje] = useState({ contenido: '' })
 
     const handleSubmit = (e) => {

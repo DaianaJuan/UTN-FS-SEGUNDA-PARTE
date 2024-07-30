@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Mensajes from '../Mensajes/Mensajes'
 
+
 const Contactos = ({ contacto }) => {
 
     const { 

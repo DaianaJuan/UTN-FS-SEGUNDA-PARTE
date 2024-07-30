@@ -1,5 +1,6 @@
 .contenedor-mensaje{
     color: white;
+    margin: 5px 0;
 }
 .contenedor-mensaje .contenedor-mensaje-otro{
     width: 70%;

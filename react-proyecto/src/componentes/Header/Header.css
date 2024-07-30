@@ -1,5 +1,5 @@
 .contenedor-header{
-    background-color: black;
+    background-color: #242626;;
     width: 100%;
     color: white;
     font-size: 19px;
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 60px;
+    height: 80px;
 }
 
 .contenedor-header .contenedor-nav .contenedor-izquierda{

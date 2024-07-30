@@ -18,7 +18,7 @@ const Footer = ({ formMensaje, setFormMensaje, handleSubmit }) => {
         <form className='contenedor-footer' onSubmit={handleSubmit}>
             <div className='contenedor-izquierda'>
                 <a href="#"><MdOutlineEmojiEmotions /></a>
-                <input type='text' name="contenido" id="input-mensaje" onChange={handleChangeFormValue} value={formMensaje.contenido} placeholder='Mensaje'></input>
+                <input type='text' name="contenido" id="input-mensaje" onChange={handleChangeFormValue} value={formMensaje.contenido} placeholder='Mensaje' required></input>
                 <a href='#'><BsPaperclip /></a>
                 <a href='#'><MdOutlineCameraAlt /></a>
             </div>

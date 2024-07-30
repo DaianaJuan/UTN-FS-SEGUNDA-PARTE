@@ -1,19 +1,25 @@
 import React from 'react'
-import { BsArrowLeftShort } from "react-icons/bs";
-import { MdOutlineVideocam } from "react-icons/md";
-import { MdOutlinePhone } from "react-icons/md";
-import { BsThreeDotsVertical } from "react-icons/bs";
+import { useParams } from 'react-router-dom'
+import { BsArrowLeftShort, BsThreeDotsVertical } from "react-icons/bs";
+import { MdOutlineVideocam, MdOutlinePhone } from "react-icons/md";
 import './Header.css'
+import DATA from '../../data/data-contactos.json'
 
 const Header = () => {
+
+    const { contactoID } = useParams();
+    const contacto = DATA.find((contacto) => contacto.id === parseInt(contactoID));
+
 
     return (
         <header className='contenedor-header'>
             <nav className='contenedor-nav'>
                 <div className='contenedor-izquierda'>
                     <button className='flecha'><BsArrowLeftShort /></button>
-                    <img className='contenedor-img' src='https://i.pinimg.com/236x/11/b8/b5/11b8b55ea257834073cb365f68ad245d.jpg'></img>
-                    <p>Pepe</p>
+                    {/* Mostrar imagen del contacto */}
+                    <img className='contenedor-img' src={contacto.thumbnail} alt='Imagen de contacto' />
+                    {/* Mostrar nombre del contacto */}
+                    <p>{contacto.nombre || 'Nombre no disponible'}</p>
                 </div>
                 <div className='contenedor-derecha'>
                     <button><MdOutlineVideocam /></button>

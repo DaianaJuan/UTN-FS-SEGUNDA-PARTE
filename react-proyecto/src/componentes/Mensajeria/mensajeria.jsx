@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { chat } from '../data.js'
-import ListaChat from './ListaChat/ListaChat'
-import Footer from './Footer/Footer.jsx'
-import Header from './Header/Header.jsx'
+import { chat } from '../../data.js'
+import ListaChat from '../ListaChat/ListaChat.jsx'
+import Footer from '../Footer/Footer.jsx'
+import Header from '../Header/Header.jsx'
 import './mensajeria.css'
 
 

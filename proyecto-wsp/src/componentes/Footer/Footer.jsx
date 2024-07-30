@@ -2,7 +2,7 @@ import { MdOutlineEmojiEmotions } from "react-icons/md";
 import { BsPaperclip } from "react-icons/bs";
 import { MdOutlineCameraAlt } from "react-icons/md";
 import { IoIosSend } from "react-icons/io";
-import './../../data/data-contactos.js'
+import DATA from '../../data/data-contactos.json'
 import './Footer.css'
 
 const Footer = ({ formMensaje, setFormMensaje, handleSubmit }) => {
