@@ -1,0 +1,63 @@
+.contenedor-header{
+    background-color: #242626;;
+    width: 100%;
+    color: white;
+    font-size: 19px;
+}
+
+.contenedor-header .contenedor-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.contenedor-header .contenedor-nav .contenedor-izquierda{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.nombre{
+    padding-left: 15px;
+}
+
+.flecha svg{
+    font-size: 2rem;
+}
+
+svg{
+    font-size: 1.5rem;
+    color: white;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+.contenedor-header .contenedor-nav .contenedor-izquierda .contenedor-img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-header .contenedor-nav .contenedor-izquierda .contenedor-img img{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedor-header .contenedor-nav .contenedor-derecha{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 10px;
+}
