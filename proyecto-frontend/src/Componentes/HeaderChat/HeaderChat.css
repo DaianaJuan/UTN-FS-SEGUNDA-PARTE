@@ -1,43 +1,59 @@
-.contenedor-header{
-    background-color: #242626;;
+.contenedor-header {
+    background-color: #242626;
     width: 100%;
     color: white;
     font-size: 19px;
 }
 
-.contenedor-header .contenedor-nav{
+.contenedor-header .contenedor-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     height: 80px;
 }
 
-.contenedor-header .contenedor-nav .contenedor-izquierda{
+.contenedor-header .contenedor-nav .contenedor-izquierda {
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.nombre{
-    padding-left: 15px;
+.contenedor-header .contenedor-nav .contenedor-izquierda .nombre {
+    padding-left: 10px;
+
 }
 
-.flecha svg{
+.nombre {
+    white-space: nowrap;
+    /* muestra el texto sin saltos de linea */
+    overflow: hidden;
+    /* Oculta el texto que no cabe en el contenedor */
+    text-overflow: ellipsis;
+    /* Muestra '...' al final si el texto es muy largo */
+    width: 60%;
+}
+
+.flecha svg {
     font-size: 2rem;
 }
 
-svg{
+svg {
     font-size: 1.5rem;
     color: white;
 }
 
-button{
+.flecha svg{
+    color: #F0E040;
+}
+
+button {
     background: none;
     border: none;
 }
 
-.contenedor-header .contenedor-nav .contenedor-izquierda .contenedor-img{
+.contenedor-header .contenedor-nav .contenedor-izquierda .contenedor-img {
     width: 50px;
     height: 50px;
     border: 1px solid grey;
@@ -48,16 +64,16 @@ button{
     align-items: center;
 }
 
-.contenedor-header .contenedor-nav .contenedor-izquierda .contenedor-img img{
+.contenedor-header .contenedor-nav .contenedor-izquierda .contenedor-img img {
     width: 100%;
     background-position: center;
     background-size: cover;
 }
 
-.contenedor-header .contenedor-nav .contenedor-derecha{
+.contenedor-header .contenedor-nav .contenedor-derecha {
     display: flex;
     flex-direction: row;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
     gap: 10px;
 }

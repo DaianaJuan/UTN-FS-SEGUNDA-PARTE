@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: flex-start;
     text-decoration: none;
+    gap: 10px;
     
 }
 .cont-contacto{
@@ -12,8 +13,8 @@
 }
 
 .cont-contacto .cont-img{
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     border: 1px solid grey;
     border-radius: 50%;
     overflow: hidden;
@@ -25,21 +26,38 @@
 .cont-contacto .cont-img img{
     width: 100%;
 }
-/*ARREGLAR*/
-.info-contacto{
+
+.flex-info-contacto{
+    width: 70%;
     display: flex;
     flex-direction: column;
-    align-items: end;
-    gap: 10px;
-    width: 70%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.info-contacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .cont-contacto .info-contacto .nombre-contacto{
     color: #f4f4f4;
-    font-family: 'StarWarsFont', sans-serif;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 .cont-contacto .info-contacto .ultima-conexion{
     color: #CED0D1;
+    font-size: 12px;
+}
+
+.cont-contacto .ultimo-mensaje {
+    white-space: nowrap;       /* muestra el texto sin saltos de linea */
+    overflow: hidden;          /* Oculta el texto que no cabe en el contenedor */
+    text-overflow: ellipsis;   /* Muestra '...' al final si el texto es muy largo */
+    width: 80%;
+    color: #CED0D1;
+    padding-top: 10px;
 }

@@ -17,7 +17,7 @@
 
 .contenedor-mensaje .mensaje-yo{
     width: 70%;
-    background-color:#144d37;
+    background-color:#887011;
     border-radius: 10px;
     padding: 7px;
     margin-left: 25%;
@@ -34,7 +34,7 @@
     justify-content: end;
     align-items: center;
     font-size: 12px;
-    color: #888787;
+    color: #d1d0d0;
     gap: 3px;
 }
 

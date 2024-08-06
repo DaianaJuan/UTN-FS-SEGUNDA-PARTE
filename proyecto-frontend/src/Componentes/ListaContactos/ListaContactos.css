@@ -7,4 +7,7 @@
     background-color: #0a1014;
     padding: 8px;
     gap: 15px;
+    overflow: hidden;
+    margin-top: 120px;
+    margin-bottom: 10%
 }

@@ -4,7 +4,7 @@ import { MdOutlineVideocam } from "react-icons/md";
 import { MdOutlinePhone } from "react-icons/md";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import './HeaderChat.css'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { obtenerContactoPorId } from '../../helpers/contactos'
 
 const HeaderChat = () => {
@@ -17,7 +17,7 @@ const HeaderChat = () => {
         <header className='contenedor-header'>
             <nav className='contenedor-nav'>
                 <div className='contenedor-izquierda'>
-                    <button className='flecha'><BsArrowLeftShort /></button>
+                    <Link to='/' className='flecha'><BsArrowLeftShort /></Link>
                     <div className='contenedor-img'>
                         <img src={contacto.thumbnail}></img>
                     </div>
