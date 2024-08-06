@@ -3,8 +3,6 @@
     width: 100%;
     color: white;
     font-size: 19px;
-    
-    
 }
 
 .contenedor-header .contenedor-nav{
@@ -19,8 +17,6 @@
     flex-direction: row;
     justify-content:flex-start;
     align-items: center;
-    
-
 }
 
 .flecha svg{
@@ -45,7 +41,6 @@ button{
     border-radius: 50%;
     border: none;
     margin-right: 8px;
-
 }
 
 .contenedor-header .contenedor-nav .contenedor-derecha{

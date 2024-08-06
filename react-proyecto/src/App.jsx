@@ -3,18 +3,11 @@ import Mensajeria from './componentes/Mensajeria/mensajeria'
 import './style.css'
 
 
-
-
 function App() {
 
   return (
     <>
-    
-      
-      
       <Mensajeria/>
-      
-    
     </>
   )
 }

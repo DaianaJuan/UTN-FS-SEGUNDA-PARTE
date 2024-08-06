@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProductList } from '../../Components'
+import ProductList from '/src/Components/ProductList/ProductList.jsx';
 import logo from '../../assets/star_wars.jpg'
 import { obtenerProductos } from '../../helpers/productos'
 import { useGlobalContext } from '../../Context/GlobalContext'

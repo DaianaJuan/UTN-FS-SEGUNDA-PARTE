@@ -39,13 +39,19 @@ button{
 }
 
 .contenedor-img{
-    width: 40px; 
-    height: 40px; 
-    background-color: gainsboro;
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
     border-radius: 50%;
-    border: none;
-    margin-right: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
 
+.contenedor-img img{
+    width: 70px;
 }
 
 .contenedor-header .contenedor-nav .contenedor-derecha{

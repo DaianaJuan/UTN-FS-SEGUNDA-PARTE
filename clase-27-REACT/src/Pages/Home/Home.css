@@ -1,0 +1,14 @@
+.imageContainer{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer img{
+    width: 130%; /* aca manejo el tamaño de la img para que se adapte al circulo*/
+}

@@ -11,8 +11,10 @@ const Header = () => {
             <nav className='contenedor-nav'>
                 <div className='contenedor-izquierda'>
                     <button className='flecha'><BsArrowLeftShort /></button>
-                    <img className='contenedor-img' src='https://i.pinimg.com/236x/11/b8/b5/11b8b55ea257834073cb365f68ad245d.jpg'></img>
-                    <p>Pepe</p>
+                    <div className='contenedor-img'>
+                        <img src='https://i.pinimg.com/564x/30/8d/41/308d41f7dce7d4f6ce96e77fc8f90c2b.jpg'></img>
+                    </div>
+                    <p>Anakin Skywalker</p>
                 </div>
                 <div className='contenedor-derecha'>
                     <button><MdOutlineVideocam /></button>

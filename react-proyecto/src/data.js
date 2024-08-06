@@ -1,6 +1,6 @@
 const chat = [
     {
-        autor: "Pepe",
+        autor: "Anakin Skywalker",
         contenido: "Hola?",
         fecha: "11:50 p. m.",
         estado: "visto",
@@ -8,28 +8,28 @@ const chat = [
     },
     {
         autor: "Yo",
-        contenido: "Hola! sos el famoso Pepe de las clases de Mati?",
+        contenido: "Hola Ani!¿Como estas?",
         fecha: "11:52 p. m.",
         estado: "visto",
         id: 2,
     },
     {
-        autor: "Pepe",
-        contenido: "Sí, soy el que sale en todos los ejemplos 😳",
+        autor: "Anakin Skywalker",
+        contenido: "El maestro Obi-Wan Kenobi dice que no estoy listo. Voy a pilotar la nave con mas velocidad para molestarlo.",
         fecha: "11:53 p. m.",
         estado: "visto",
         id: 3,
     },
     {
         autor: "Yo",
-        contenido: "Sos real!! pensé que eras un personaje ficticio de la cursada",
+        contenido: "Jajaj, bueno. Puedo ir?",
         fecha: "11:55 p. m.",
         estado: "recibido",
         id: 4,
     },
     {
         autor: "Yo",
-        contenido: "Pepe??",
+        contenido: "Anakin??",
         fecha: "11:59 p. m.",
         estado: "recibido",
         id: 5,
