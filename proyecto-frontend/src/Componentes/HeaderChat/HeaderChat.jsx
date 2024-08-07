@@ -7,6 +7,7 @@ import './HeaderChat.css'
 import { Link, useParams } from 'react-router-dom';
 import { obtenerContactoPorId } from '../../helpers/contactos'
 
+
 const HeaderChat = () => {
 
     const { id } = useParams();  // Obtenemos el ID del contacto desde la URL
@@ -21,7 +22,7 @@ const HeaderChat = () => {
                     <div className='contenedor-img'>
                         <img src={contacto.thumbnail}></img>
                     </div>
-                    <p className='nombre'>{contacto.nombre}</p>
+                    <Link to={'/informacion/' + id} className='nombre'>{contacto.nombre}</Link>
                 </div>
                 <div className='contenedor-derecha'>
                     <button><MdOutlineVideocam /></button>

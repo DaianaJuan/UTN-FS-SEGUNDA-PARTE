@@ -145,7 +145,7 @@ export const contactos = [
         ]
     },
     {
-        nombre: 'Yoda',
+        nombre: 'Maestro Yoda',
         thumbnail: '/imagenes/contactos/yoda.jpg',
         ultima_conexion: '2/8/2024',
         id_autor: 5,
@@ -231,7 +231,7 @@ export const contactos = [
         ]
     },
     {
-        nombre: 'R2-D2',
+        nombre: 'R2-D2 Artu.',
         thumbnail: '/imagenes/contactos/r2-d2.jpeg',
         ultima_conexion: 'hoy 03:45 p. m.',
         id_autor: 7,

@@ -2,7 +2,7 @@
     background-color: #242626;
     width: 100%;
     color: white;
-    font-size: 19px;
+    font-size: 19px; 
 }
 
 .contenedor-header .contenedor-nav {
@@ -13,6 +13,7 @@
     height: 80px;
 }
 
+/* CONTENEDOR IZQUIERDA FLEX */
 .contenedor-header .contenedor-nav .contenedor-izquierda {
     display: flex;
     flex-direction: row;
@@ -20,39 +21,28 @@
     align-items: center;
 }
 
-.contenedor-header .contenedor-nav .contenedor-izquierda .nombre {
-    padding-left: 10px;
-
+/* FLECHA SVG CON LINK */
+.contenedor-header .contenedor-nav .contenedor-izquierda .flecha svg{
+        font-size: 2rem;
+        color: #ece378;
 }
 
-.nombre {
+/* NOMBRE CON LINK*/
+.contenedor-header .contenedor-nav .contenedor-izquierda .nombre{
+    text-decoration: none;
+    color: inherit;
+    gap: 10px;
     white-space: nowrap;
     /* muestra el texto sin saltos de linea */
     overflow: hidden;
     /* Oculta el texto que no cabe en el contenedor */
     text-overflow: ellipsis;
     /* Muestra '...' al final si el texto es muy largo */
-    width: 60%;
+    width: 50%;
+    padding-left: 10px;
 }
 
-.flecha svg {
-    font-size: 2rem;
-}
-
-svg {
-    font-size: 1.5rem;
-    color: white;
-}
-
-.flecha svg{
-    color: #F0E040;
-}
-
-button {
-    background: none;
-    border: none;
-}
-
+/* IMAGEN */
 .contenedor-header .contenedor-nav .contenedor-izquierda .contenedor-img {
     width: 50px;
     height: 50px;
@@ -76,4 +66,16 @@ button {
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
+}
+
+svg {
+    font-size: 1.5rem;
+    color:#ece378 ;
+}
+
+
+
+button {
+    background: none;
+    border: none;
 }
