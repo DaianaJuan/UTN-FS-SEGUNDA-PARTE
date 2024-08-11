@@ -43,11 +43,8 @@ const buscarContactoPorNombre = (nombre) => {
 
 
 // MENSAJES
-const guardarMensajes = (mensajes) => {
-    const mensajes_JSON = JSON.stringify(mensajes)
-    localStorage.setItem("contactos", mensajes_JSON)
-}
-export const obtenerMensajes = () => {
+
+const obtenerMensajes = () => {
     const contactos = obtenerContactos()
     const mensajes_guardados = contactos.map((contacto) => {
         if(mensajes_guardados){
@@ -62,6 +59,10 @@ export const obtenerMensajes = () => {
     })
 }
 
+const guardarMensajes = (mensajes) => {
+    const mensajes_JSON = JSON.stringify(mensajes)
+    localStorage.setItem("contactos", mensajes_JSON)
+}
 
 
 
