@@ -13,7 +13,6 @@ const FooterHomeContactos = () => {
                 <button><FaRebel /><br />Rebeldes</button>
                 <button><MdOutlinePhone /><br />Llamadas</button>
             </div>
-            <span>JediDev © 2024 - Todos los derechos reservados</span>
         </footer>
     )
 }

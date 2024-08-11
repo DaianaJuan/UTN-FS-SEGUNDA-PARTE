@@ -1,29 +1,11 @@
 import { contactos } from "../data/contactosData";
 
-/**
- * Devuelve el contacto con el id especificado.
- *
- * @param {number} id - El id del contacto a buscar.
- * @return {Object | undefined} El objeto de contacto con el id especificado o undefined si no se encuentra.
- */
-
-export const obtenerContactoPorId = (id) => {
-    const contactoPorId = obtenerContactoPorId()
-    return contactoPorId.find((contacto) => contacto.id_autor === Number(id))
-}
-
-/* GUARDAR CONTACTOS EN LOCAL STORAGE*/ 
 
 const guardarContacto = (contactos) => {
     const contactos_JSON = JSON.stringify(contactos)
     localStorage.setItem("contactos", contactos_JSON)
 }
-/**
- * Obtiene la lista de contactos del almacenamiento local. Si no hay contactos almacenados, guarda los 
- * contactos iniciales y los devuelve.
- *
- * @return {Array} La lista de contactos
- */
+
 export const obtenerContactos = () => {
     const contactos_guardados = localStorage.getItem("contactos")
     
@@ -39,7 +21,10 @@ export const obtenerContactos = () => {
     
 }
 
-/* CREAR CONTACTO, GUARDAR CONTACTO EN LOCAL STORAGE Y RETORNAR CONTACTOS */
+export const obtenerContactoPorId = (id) => {
+    const contactos = obtenerContactos() 
+    return contactos.find((contacto) => contacto.id_autor === Number(id))
+}
 
 const crearContacto = (nuevo_contacto) => {
     const lista_contactos = obtenerContactos()
@@ -47,14 +32,34 @@ const crearContacto = (nuevo_contacto) => {
     guardarContacto(lista_contactos)
 }
 
-/* OBTENER CONTACTO POR NOMBRE */
-
-export const obtenerContactoPorNombre = (nombre) => {
+const buscarContactoPorNombre = (nombre) => {
     const lista_contactos = obtenerContactos();
     const contactos_filtrados = lista_contactos.filter((contacto) =>
         contacto.nombre.toLowerCase().includes(nombre.toLowerCase())
     )
+    guardarContacto(contactos_filtrados)
     return contactos_filtrados;
+}
+
+
+// MENSAJES
+const guardarMensajes = (mensajes) => {
+    const mensajes_JSON = JSON.stringify(mensajes)
+    localStorage.setItem("contactos", mensajes_JSON)
+}
+export const obtenerMensajes = () => {
+    const contactos = obtenerContactos()
+    const mensajes_guardados = contactos.map((contacto) => {
+        if(mensajes_guardados){
+            //si hay contactos guardados, los devuelvo
+            return JSON.parse(mensajes_guardados)
+        }
+        else{
+            //si no hay contactos guardados, guardo los contactos iniciales
+            guardarMensajes(mensajes)
+            return mensajes
+        }
+    })
 }
 
 

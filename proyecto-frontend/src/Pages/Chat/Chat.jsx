@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ListaMensajes from '../../Componentes/ListaMensajes/ListaMensajes'
 import FooterChat from '../../Componentes/FooterChat/FooterChat'
-import { formatearFecha } from '../../helpers/contactos'
+import { formatearFecha, obtenerMensajes } from '../../helpers/contactos'
 import { v4 as uuidv4 } from 'uuid'
 import { useParams } from 'react-router-dom'
 import { obtenerContactoPorId } from '../../helpers/contactos'
@@ -10,8 +10,11 @@ import HeaderChat from '../../Componentes/HeaderChat/HeaderChat'
 
 
 const Chat = () => {
+    /*console.log(obtenerMensajes())*/
+
     const { id } = useParams();  // Obtenemos el ID del contacto desde la URL
     const contacto = obtenerContactoPorId(id);  // Obtenemos el contacto por su ID
+
 
     const [listaMensajes, setlistaMensajes] = useState(contacto.mensajes)
     const [formMensaje, setFormMensaje] = useState({ contenido: '' })
@@ -28,7 +31,6 @@ const Chat = () => {
         setlistaMensajes([...listaMensajes, nuevoMensaje])
         setFormMensaje({ contenido: '' })
     }
-
     return (
         <main className='contenedor-chat'>
             <HeaderChat/>

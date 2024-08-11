@@ -3,6 +3,9 @@
     width: 100%;
     color: white;
     font-size: 19px; 
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .contenedor-header .contenedor-nav {

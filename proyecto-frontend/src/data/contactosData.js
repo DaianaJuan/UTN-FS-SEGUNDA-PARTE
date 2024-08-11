@@ -14,33 +14,39 @@ export const contactos = [
             },
             {
                 autor: 'Yo',
-                contenido: 'Lord Vader, me honra su mensaje. ¿Cómo se encuentra hoy?',
+                contenido: 'Lord Vader, que sorpresa! Qué puedo hacer por usted?',
                 estado: 'visto',
                 fecha: 'hoy 11:13 p. m.',
                 id: 2
             },
             {
                 autor: 'Darth Vader',
-                contenido: 'Estoy siempre en servicio del Imperio. Mis asuntos personales no son de importancia. Unete a mí',
+                contenido: 'Únete al lado oscuro. Se mi aprendiz!',
                 estado: 'visto',
                 fecha: 'hoy 11:14 p. m.',
                 id: 3
             },
             {
                 autor: 'Yo',
-                contenido: '¿No ha sentido nunca el deseo de regresar al Lado Luminoso?',
+                contenido: '¿El lado oscuro?, no sé. Lo veo muy luminoso en su foto de perfil.',
                 estado: 'visto',
                 fecha: 'hoy 11:15 p. m.',
                 id: 4
             },
             {
                 autor: 'Darth Vader',
-                contenido: 'Ese Anakin Skywalker que una vez conociste ya no existe. Solo queda Darth Vader. El Lado Luminoso me mostró debilidad y fracaso. El Lado Oscuro me ha dado propósito y fuerza. Ven al lado oscuro!',
+                contenido: 'Sí, perdí una apuesta con Darth Sidious',
                 estado: 'visto',
                 fecha: 'hoy 11:17 p. m.',
                 id: 5
             },
-        ]
+        ],
+        informacion:
+        {
+            telefono: '555-555-5555',
+            estado: 'En el cine',
+            id_info: 1
+        },
     },
     {
         nombre: 'Obi-Wan Kenobi',
@@ -50,34 +56,46 @@ export const contactos = [
         mensajes: [
             {
                 autor: 'Yo',
-                contenido: 'Maestro Kenobi, es un honor hablar con usted. ¿Tiene algún consejo para un aprendiz?',
+                contenido: 'Hola Obi-Wan, hace mucho que no sé de vos',
                 estado: 'visto',
                 fecha: 'ayer 01:08 p. m.',
                 id: 1
             },
             {
                 autor: 'Obi-Wan Kenobi',
-                contenido: 'El honor es mío.',
+                contenido: 'Hola! ¿Como estás?',
                 estado: 'visto',
                 fecha: 'ayer 01:08 p. m.',
                 id: 2
             },
             {
                 autor: 'Obi-Wan Kenobi',
-                contenido: 'La Fuerza es una guía y un aliado. Mantén siempre la mente abierta y el corazón puro. La paciencia y la compasión son tus mejores herramientas.',
+                contenido: 'He estado muy ocupado. El Maestro Yoda se tomó vacaciones y me dejó a cargo. Me querés ayudar?',
                 estado: 'visto',
                 fecha: 'ayer 01:08 p. m.',
                 id: 3
             },
             {
                 autor: 'Yo',
-                contenido: 'Muchas gracias por su sabiduría, Maestro Kenobi.',
-                estado: 'recibido',
+                contenido: 'Dale, mañana caigo temprano con el mate.',
+                estado: 'visto',
                 fecha: 'ayer 02:02 p. m.',
                 id: 4
             },
-            
-        ]
+            {
+                autor: 'Obi-Wan Kenobi',
+                contenido: 'Bueno, compro unas facturas. Traete la yerba de naranja!',
+                estado: 'visto',
+                fecha: 'ayer 01:08 p. m.',
+                id: 5
+            },
+
+        ],
+        informacion: {
+            telefono: '333-333-3333',
+            estado: 'En la escuela',
+            id_info: 2
+        },
     },
     {
         nombre: 'Jar Jar Binks',
@@ -94,26 +112,32 @@ export const contactos = [
             },
             {
                 autor: 'Jar Jar Binks',
-                contenido: '¡Ooh, mesa muy feliz de leerte! ¿Cómo puedo ayudarte hoy, amigo?',
+                contenido: '¡Ooh, mesa muy feliz de leerte!',
                 estado: 'visto',
                 fecha: 'ayer',
                 id: 2
             },
             {
                 autor: 'Yo',
-                contenido: 'Solo quería saludarte y saber si has tenido alguna aventura reciente.',
+                contenido: 'Qué contas?',
                 estado: 'visto',
                 fecha: 'ayer',
                 id: 3
             },
             {
                 autor: 'Jar Jar Binks',
-                contenido: '¡Okey-day! ¡Siempre aventuras con Jar Jar! ¡Misa caí en el lago otra vez, pero todo bien ahora!',
+                contenido: '¡Misa caí en el lago otra vez, pero todo bien ahora!',
                 estado: 'visto',
                 fecha: 'ayer',
                 id: 4
             },
-        ]
+        ],
+        informacion:
+        {
+            telefono: '111-111-1111',
+            estado: 'Disponible',
+            id_info: 3
+        },
     },
     {
         nombre: 'Leia Organa',
@@ -123,14 +147,14 @@ export const contactos = [
         mensajes: [
             {
                 autor: 'Leia Organa',
-                contenido: 'Hola, soy Leia Organa. ¿En qué puedo ayudarte hoy?',
+                contenido: 'Hola, cómo estás?. Quería saber si has visto a Han.',
                 estado: 'visto',
                 fecha: 'ayer',
                 id: 1
             },
             {
                 autor: 'Yo',
-                contenido: 'Hola, Princesa Leia. Me preguntaba, ¿cómo está Han Solo?',
+                contenido: 'Hola, Princesa Leia. No, hace bastante que no hablo con él. Debe estar estafando a alguien.',
                 estado: 'visto',
                 fecha: 'ayer',
                 id: 2
@@ -142,7 +166,13 @@ export const contactos = [
                 fecha: 'ayer',
                 id: 3
             },
-        ]
+        ],
+        informacion:
+        {
+            telefono: '222-222-2222',
+            estado: 'En una reunión',
+            id_info: 4
+        },
     },
     {
         nombre: 'Maestro Yoda',
@@ -159,26 +189,32 @@ export const contactos = [
             },
             {
                 autor: 'Yo',
-                contenido: 'Maestro Yoda, quisiera pedirle que me haga la prueba para convertirme en Jedi.',
+                contenido: 'Maestro Yoda, disculpe es que lo veo muy cambiado.',
                 estado: 'visto',
                 fecha: 'hoy 05:34 p. m.',
                 id: 2
             },
             {
                 autor: 'Yoda',
-                contenido: 'Ah, deseo grande tienes. Pruebas enfrentar debes, listo estar. Comencemos, sí.',
+                contenido: 'Vacaciones estoy disfrutando, sí. Y ejercicio haciendo, también. Tiempo para meditar y entrenar, me tomo. ¡Mucho bienestar traer esto, sí!',
                 estado: 'visto',
                 fecha: 'hoy 05:35 p. m.',
                 id: 3
             },
             {
                 autor: 'Yo',
-                contenido: 'Gracias Maestro.',
+                contenido: 'Le sienta bien Maestro, disfrute!.',
                 estado: 'recibido',
                 fecha: 'hoy 05:37 p. m.',
                 id: 4
             },
-        ]
+        ],
+        informacion:
+        {
+            telefono: '444-444-4444',
+            estado: 'En el gimnasio',
+            id_info: 5
+        },
     },
     {
         nombre: 'Han Solo',
@@ -195,7 +231,7 @@ export const contactos = [
             },
             {
                 autor: 'Han Solo',
-                contenido: '¿Qué pasa? ¿Qué clase de negocio tienes en mente?',
+                contenido: '¿Qué pasa? ¿Qué clase de negocio tenes en mente?',
                 estado: 'visto',
                 fecha: '28/07/2024',
                 id: 2
@@ -223,12 +259,25 @@ export const contactos = [
             },
             {
                 autor: 'Han Solo',
-                contenido: 'Suena tentador. Tienes un trato, pero si algo huele mal, me largo.',
+                contenido: 'Suena tentador. Tenes un trato, pero si algo huele mal, me largo.',
                 estado: 'visto',
                 fecha: '28/07/2024',
                 id: 6
             },
-        ]
+            {
+                autor: 'Yo',
+                contenido: 'Che, me olvidaba, Leia te anda buscando...',
+                estado: 'visto',
+                fecha: '28/07/2024',
+                id: 7
+            },
+        ],
+        informacion:
+        {
+            telefono: '999-999-9999',
+            estado: 'Estoy durmiendo',
+            id_info: 6
+        },
     },
     {
         nombre: 'R2-D2 Artu.',
@@ -285,6 +334,12 @@ export const contactos = [
                 fecha: '11/07/2024',
                 id: 7
             },
-        ]
+        ],
+        informacion:
+        {
+            telefono: '000-000-0000',
+            estado: 'Beep beep',
+            id_info: 7
+        },
     }
 ]
