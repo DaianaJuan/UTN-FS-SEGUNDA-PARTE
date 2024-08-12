@@ -1,5 +1,8 @@
 .contenedor-header-informacion {
-    background-image: url('../../../public/imagenes/fondinfo.jpeg');
+    background-image: url('../../../public/imagenes/stars.jpg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
     background-color: #242626;
     width: 100%;
     color: white;
