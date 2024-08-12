@@ -14,3 +14,110 @@
     font-family:system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+@media screen and (min-width: 650px){
+    /* HEADER - CHAT */
+    .flex-info-contacto{
+        width: 85%;
+    }
+    .contenedor-header .contenedor-nav {
+        height: 100px;
+    }
+    .contenedor-header .contenedor-nav .contenedor-izquierda{
+        width: 70%;
+    }
+    .contenedor-header .contenedor-nav .contenedor-izquierda .nombre{
+        gap: 30px;
+        white-space: nowrap;
+        /* muestra el texto sin saltos de linea */
+        overflow: none;
+        /* Oculta el texto que no cabe en el contenedor */
+        text-overflow: none;
+        /* Muestra '...' al final si el texto es muy largo */
+        padding-left: 20px;
+        font-family: 'StarWarsFont';
+        font-size: 20px;
+        color: #ece378;
+    }
+    .contenedor-header .contenedor-nav .contenedor-izquierda .contenedor-img {
+        width: 80px;
+        height: 80px;
+    }
+    .contenedor-header .contenedor-nav .contenedor-derecha {
+        gap: 30px;
+    }
+    svg {
+        font-size: 1.7rem;
+    }
+    .contenedor-header .contenedor-nav .contenedor-izquierda .flecha svg{
+        font-size: 2.5rem;
+    }
+
+    /* FOOTER - CHAT */
+
+    .contenedor-footer .contenedor-izquierda {
+        height: 70px;
+    }
+    .contenedor-footer .contenedor-izquierda svg {
+        font-size: 1.7rem;
+    }
+    .contenedor-footer .btn-enviar {
+        width: 70px;
+        height: 70px;
+    }
+    .contenedor-footer .btn-enviar svg {
+        font-size: 1.8rem;
+    }
+
+    /* LISTA MENSAJES */
+
+    .contenedor-lista-mensajes{
+        margin-top: 100px;
+    }
+    .contenedor-mensaje .mensaje-yo{
+        margin-left: 29%;
+    }
+}
+
+@media screen and (min-width: 1050px){
+    .contenedor-header-home .nombre-app {
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    .contenedor-header-home .input-buscador {
+        background-color: #3a3b3b;
+        height: 45px;
+        padding: 0 20px;
+    }
+    /* CONTACTOS */
+    .contacto-link {
+        gap: 20px;
+    }
+    .cont-contacto{
+        padding: 7px;
+    }
+    .cont-contacto .cont-img{
+        width: 90px;
+        height: 90px;
+    }
+    .flex-info-contacto{
+        width: 85%;
+        align-items: space-between;
+    }
+    .cont-contacto .info-contacto .nombre-contacto{
+        font-size: 1.3rem;
+    }
+    .cont-contacto .info-contacto .ultima-conexion{
+        color: #a3a3a3;
+        font-size: 1rem;
+    }
+    .cont-contacto .ultimo-mensaje {
+        width: 90%;
+        color: #aaaaaa;
+        padding-top: 20px;
+        font-size: 1.2rem;
+    }
+    .cont-contactos {
+        margin-top: 150px;
+        margin-bottom: 200px;
+    }
+}

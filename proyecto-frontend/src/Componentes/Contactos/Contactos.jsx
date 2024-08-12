@@ -5,17 +5,6 @@ import './Contactos.css'
 const Contactos = ({ contacto }) => {
 
 
-    /**
-     * Renderiza un componente de contacto con la información del contacto proporcionada.
-     *
-     * @param {Object} contacto - El objeto de contacto que contiene la información del contacto.
-     * @param {string} contacto.nombre - El nombre del contacto.
-     * @param {string} contacto.thumbnail - La URL de la imagen en miniatura del contacto.
-     * @param {string} contacto.ultima_conexion - La última hora de conexión del contacto.
-     * @param {string} contacto.id_autor - El ID del autor del contacto.
-     * @return {JSX.Element} El componente de contacto.
-     */
-
     //desestructurando contacto para acceder a sus propiedades y poder llamarlas.
 
     const {

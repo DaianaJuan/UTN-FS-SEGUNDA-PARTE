@@ -6,11 +6,17 @@ import { useParams } from 'react-router-dom';
 import { obtenerContactoPorId } from '../../helpers/contactos';
 
 
-
+/**
+ * Un componente funcional que renderiza información sobre un contacto.
+ *
+ * Obtiene el ID del contacto de la URL y lo utiliza para obtener la información del contacto.
+ * 
+ * @return {JSX.Element} El elemento JSX que representa la información del contacto.
+ */
 const InformacionContacto = () => {
 
-    const { id } = useParams();
-    const contacto = obtenerContactoPorId(id);
+    const { id } = useParams()
+    const contacto = obtenerContactoPorId(id)
     const { telefono, estado } = contacto.informacion
 
     return (

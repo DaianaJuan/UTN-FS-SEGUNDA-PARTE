@@ -341,5 +341,6 @@ export const contactos = [
             estado: 'Beep beep',
             id_info: 7
         },
-    }
+    },
+
 ]

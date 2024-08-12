@@ -4,7 +4,13 @@ import { HomeContactos, Chat, Informacion  } from './Pages'
 import './global.css'
 
 
-
+/**
+ * Un componente funcional que renderiza la aplicación principal.
+ *
+ * Utiliza la biblioteca react-router-dom para definir rutas para diferentes páginas.
+ * 
+ * @return {JSX.Element} El elemento JSX que representa la aplicación.
+ */
 function App() {
 
   return (

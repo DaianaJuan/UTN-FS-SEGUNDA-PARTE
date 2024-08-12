@@ -2,11 +2,30 @@ import React from 'react'
 import './HeaderHomeContactos.css'
 import { MdOutlineCameraAlt } from "react-icons/md";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import { IoIosSend } from "react-icons/io";
 
 
-const HeaderHomeContactos = () => {
+/**
+ * Un componente funcional que renderiza el encabezado de la página de contactos de inicio.
+ *
+ * Recibe la consulta de búsqueda y una función de callback para manejar cambios en la entrada de búsqueda.
+ *
+ * @param {string} search - La consulta de búsqueda actual.
+ * @param {function} onSearchChange - Una función de callback para manejar cambios en la entrada de búsqueda.
+ * @return {JSX.Element} El elemento JSX que representa el encabezado.
+ */
+const HeaderHomeContactos = ({ search, onSearchChange }) => {
 
+    /**
+     * Maneja el evento de cambio del campo de búsqueda.
+     *
+     * @param {object} e - El objeto de evento que contiene información sobre el evento de cambio.
+     * @return {void}
+     */
+    const handleChange = (e) => {
+        if (typeof onSearchChange === 'function') {
+            onSearchChange(e.target.value);
+        }
+    }
 
     return (
         <header className='contenedor-header-home'>
@@ -22,15 +41,16 @@ const HeaderHomeContactos = () => {
                     <div className='input-buscador'>
                         <label htmlFor="nombre"></label>
                         <input
-                            type="search"
+                            type="text"
                             placeholder="Buscar"
+                            onChange={handleChange}
+                            value={search}
                         />
                     </div>
-                    <button className='btn-enviar' type='submit'><IoIosSend /></button>
                 </div>
             </nav>
         </header>
     )
 }
 
-export default HeaderHomeContactos 
+export default HeaderHomeContactos
