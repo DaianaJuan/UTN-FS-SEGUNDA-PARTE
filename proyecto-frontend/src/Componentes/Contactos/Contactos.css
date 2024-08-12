@@ -75,33 +75,35 @@
     width: calc(100% - 65px);
 }
 
+
 /* Media Query para pantallas entre 320px y 650px */
-@media (min-width: 320px) and (max-width: 650px) {
+/*@media (min-width: 320px) and (max-width: 650px) {
     .cont-contacto {
         flex-direction: row;
-        /* Mantiene los elementos en fila en pantallas más grandes */
+        /* Mantiene los elementos en fila en pantallas más grandes 
     }
 
     .flex-info-contacto {
         margin-left: 10px;
-        /* Espacio entre la imagen y la información del contacto */
+        /* Espacio entre la imagen y la información del contacto 
     }
 
     .info-contacto {
         flex-direction: row;
-        /* Mantiene el nombre y la última conexión en fila */
+        /* Mantiene el nombre y la última conexión en fila 
         justify-content: space-between;
-        /* Alinea el nombre y la última conexión a los extremos */
+        /* Alinea el nombre y la última conexión a los extremos 
         width: 100%;
-        /* Asegura que la información del contacto ocupe el ancho completo */
+        /* Asegura que la información del contacto ocupe el ancho completo 
     }
 
     .ultimo-mensaje {
         margin-top: 5px;
-        /* Añade margen arriba para separar el mensaje del nombre y la última conexión */
+        /* Añade margen arriba para separar el mensaje del nombre y la última conexión 
         text-align: left;
-        /* Alinea el último mensaje a la izquierda */
+        /* Alinea el último mensaje a la izquierda
         width: 100%;
-        /* Asegura que el mensaje ocupe el ancho completo del contenedor */
+        /* Asegura que el mensaje ocupe el ancho completo del contenedor 
     }
 }
+*/
